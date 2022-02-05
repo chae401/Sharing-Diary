@@ -1,0 +1,61 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgba(31, 147, 124, 0.5); /*맨 마지막이 투명도 조절*/
+  } /* 뒷 배경*/
+  
+  div {
+      text-align : center;
+  }
+  .content {
+    padding: 3rem;
+  } /*로고 사진 위치 웹사이트 전체 정중앙*/
+  
+  @import url(https://fonts.googleapis.com/css?family=BenchNine:700);
+  button {
+    
+    display: inline-block;
+    font-family: 'BenchNine', Arial, sans-serif;
+    font-size: 0.5em;
+    font-size: 18px;
+    line-height: 1em;
+    margin: 15px 40px;
+    outline: none;
+    padding: 15px 40px 10px;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 1rem; 
+    border : none;
+    background : beige;
+  }
+  button:before,
+  button:after {
+    border-color: transparent;
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s;
+    border-style: solid;
+    border-width: 0;
+    content: "";
+    height: 24px;
+    position: absolute;
+    width: 24px;
+  } /* start 버튼 디자인 */
+  button:before {
+    border-color: beige;
+    border-radius : 5px;
+    border-right-width: 2px;
+    border-top-width: 2px;
+    right: -5px;
+    top: -5px;
+  } /* 왼쪽 꽁다리*/
+  button:after {
+    border-bottom-width: 2px;
+    border-color: beige;
+    border-radius : 5px;
+    border-left-width: 2px;
+    bottom: -5px;
+    left: -5px;
+  } /* 오른쪽 꽁다리*/

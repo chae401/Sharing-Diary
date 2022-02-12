@@ -1,0 +1,98 @@
+
+.main{
+  box-shadow: 0 13px 15px rgba(0, 0, 0, 0.5);
+  width:800px;
+    height:600px;
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin-left:-400px;
+    margin-top:-300px;
+    background-color: #ffffff;
+    border: 5px solid rgb(78, 134, 130);
+    border-radius: 30px;
+}
+/*
+.fri{
+  background:#fff;
+}
+.fri:hover{
+  background:rgba(233, 232, 232, 0.925);
+}
+*/
+
+#title{
+    width:800px;
+    height:96px;
+    position:absolute;
+    left:50%;
+    top:18%;
+    margin-left:-403px;
+    margin-top:-109.5px;
+    border: 2px solid rgb(78, 134, 130);
+    border-radius: 30px 30px 0px 0px;
+    background: rgb(78, 134, 130);
+    font-size:25px;
+    color: white;
+}
+/*
+.fri{
+    width: 150px;
+    height: 150px; 
+    position:absolute;
+    left:55%;
+    top:60%;
+    margin-left:-403px;
+    margin-top:-109.5px;
+    border-radius: 70%;
+    overflow: hidden;
+}
+*/
+
+
+#add_btn{
+  position:absolute;
+  left:50%;
+  top:50%;
+  margin-left:-10px;
+  margin-top:110px;
+}
+
+/*얘네는 백엔드 끝나고 수정*/
+#fri{
+    width:800px;
+    height:96px;
+    position:absolute;
+    left:50%;
+    top:44%;
+    margin-left:-403px;
+    margin-top:-170px;
+    border: 2px solid rgb(78, 134, 130);
+    border-radius: 0px;
+    font-size:25px;
+}
+#rayout{
+    width:800px;
+    height:96px;
+    position:absolute;
+    left:50%;
+    top:60%;
+    margin-left:-403px;
+    margin-top:-168px;
+    border: 2px solid rgb(78, 134, 130);
+    border-radius: 0px;
+  font-size:25px;
+}
+
+#password{
+    width:800px;
+    height:96px;
+    position:absolute;
+    left:50%;
+    top:76%;
+    margin-left:-403px;
+    margin-top:-165px;
+    border: 2px solid rgb(78, 134, 130);
+    border-radius: 0px;
+  font-size:25px;
+}

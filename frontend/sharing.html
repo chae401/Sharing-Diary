@@ -18,7 +18,14 @@
 <!-- CSS ======================================================
 	<link rel="stylesheet" href="css/responsivetables.css">-->
 	<!-- Demo CSS (don't use) -->
-
+	<link rel="stylesheet" href="/settingstyle.css">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+	<style>
+		*{
+      font-family: 'Jua', sans-serif;
+    }
 		body, html {
 			padding:0px;
 			margin:0px;
@@ -65,7 +72,6 @@
 			background:#eee;
 			color:#222;
 		}
-
 		
 		.button {
 			display: inline-block;
@@ -123,12 +129,10 @@
             id란?
                 고유식별자의 역할(중복될 수 없음)
                 "#id값"으로 <style>태그 내부에서 제어 가능
-
             class란?
                 id와 다르게 중복사용이 가능하고,
                  값을 여러개 줄 땐 class="first second"처럼 띄어쓰기로 구분하고, 
                  class값 이라는 형태로 제어해야함
-
             ex) id="myHeader", class="city"<-london, paris,tokyo가 표시됨
         -->
         <div style="display:inline-block; width:250px; margin-left:600px;">
@@ -167,8 +171,8 @@
 </div>
 
 <!-- JS ======================================================= -->
-<script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript" src="monthly.js"></script>
+<script type="text/javascript" src="/jquery.js"></script>
+<script type="text/javascript" src="/monthly.js"></script>
 <div class="modal">
 	<div class="modal-content">
 	  <p>아이디 검색</p>
@@ -191,28 +195,18 @@
 <script type="text/javascript">
 
 /*
-
 * 달러 ($) 식별자
 달러 기호는 일반적으로 document.getElementById () 함수의 바로 가기로 사용됩니다.
-
 * getElementbyId 사용법
 태그에 있는 id 속성을 사용하여 해당 태그에 접근하여 하고 싶은 작업을 할 때 쓰는 함수
 document.getElementById(id);에 해당 element의 id를 넣음으로 사용
-
 * $(document).ready() 는 
-
 외부 리소스, 이미지와는 상관없이 브라우저가  DOM(document Object Model) 을 생성한 직후에 실행
-
  $(window).load() 보다 더 빠르게 실행되고 중복 사용하여 실행해도 선언한 순서대로 실행됩니다.
-
 * $(window).load()  또는  $(window).on('load') 
-
  DOM(Document Object Model) 의 Standard 이벤트 입니다.
-
 HTML의 로딩이 끝난 후 실행 되고, 화면에 필요한 모든 요소 (image, css, javascript 등)들이 웹 브라우저 메모리에 모두 올려진 다음에 실행됩니다. 이미지의 경우엔 로드가 실패되었을 경우에도 포함입니다.
-
 전체 페이지의 모든 외부 리소스와 이미지가 브라우저에 불려진 후 작동하게 되어 이미지가 안뜨거나 딜레이가 생길 때에는 그만큼의 시간이 딜레이 된 후 실행됩니다.
-
 */
 	$(window).load( function() {
 

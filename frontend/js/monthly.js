@@ -39,7 +39,7 @@ Monthly 2.2.2 by Kevin Thornbloom is licensed under a Creative Commons Attributi
 				weekdayNameFormat = options.weekdayNameFormat || "short",
 				monthNames = options.monthNames || defaultMonthNames(),
 				dayNames = options.dayNames || defaultDayNames(),
-				markupBlankDay = '<div class="m-d monthly-day-blank"><div class="monthly-day-number"></div></div>',
+				markupBlankDay = '<div class="m-d monthly-day-blank"><div class="monthly-day-number"></div></div>',//여기는 날짜가 생성되기 전에
 				weekStartsOnMonday = options.weekStart === "Mon" || options.weekStart === 1 || options.weekStart === "1",
 				primaryLanguageCode = locale.substring(0, 2).toLowerCase();
 
@@ -111,7 +111,7 @@ Monthly 2.2.2 by Kevin Thornbloom is licensed under a Creative Commons Attributi
 						month < currentMonth
 						|| (month === currentMonth && dayNumber < currentDay)
 					))),
-					innerMarkup = '<div class="monthly-day-number">' + dayNumber + '</div><div class="monthly-indicator-wrap"></div>';
+					innerMarkup = '<div class="monthly-day-number">' + dayNumber + '</div><div class="monthly-indicator-wrap"><p>음</p></div>';//찾았다 여기!!
 				if(options.mode === "event") {
 					var thisDate = new Date(year, mZeroed, dayNumber, 0, 0, 0, 0);
 					$(parent + " .monthly-day-wrap").append("<div"
@@ -120,12 +120,12 @@ Monthly 2.2.2 by Kevin Thornbloom is licensed under a Creative Commons Attributi
 							+ " dt" + thisDate.toISOString().slice(0, 10)
 							)
 						+ attr("data-number", dayNumber)
-						+ ">" + innerMarkup + "</div>");
+						+ ">" + innerMarkup + "<p>냐</p></div>");
 					$(parent + " .monthly-event-list").append("<div"
 						+ attr("class", "monthly-list-item")
 						+ attr("id", uniqueId + "day" + dayNumber)
 						+ attr("data-number", dayNumber)
-						+ '><div class="monthly-event-list-date">' + dayNames[thisDate.getDay()] + "<br>" + dayNumber + "</div></div>");
+						+ '><div class="monthly-event-list-date"><p>흠</p>' + dayNames[thisDate.getDay()] + "<br>" + dayNumber + "</div></div>");
 				} else {
 					$(parent + " .monthly-day-wrap").append("<a"
 						+ attr("href", "#")
@@ -315,7 +315,7 @@ Monthly 2.2.2 by Kevin Thornbloom is licensed under a Creative Commons Attributi
 			}
 			dayName += "<div>" + dayNames[startOnMonday ? 0 : 6] + "</div>";
 			$(parent).append('<div class="monthly-day-title-wrap">' + dayName + '</div><div class="monthly-day-wrap"></div>');
-		}
+		} 
 
 		// Detect the user's preferred language
 		function defaultLocale() {
@@ -456,6 +456,7 @@ Monthly 2.2.2 by Kevin Thornbloom is licensed under a Creative Commons Attributi
 			// If events, show events list
 			var whichDay = $(this).data("number");
 			if(options.mode === "event" && options.eventList) {
+				/*
 				var	theList = $(parent + " .monthly-event-list"),
 					myElement = document.getElementById(uniqueId + "day" + whichDay),
 					topPos = myElement.offsetTop;
@@ -467,7 +468,9 @@ Monthly 2.2.2 by Kevin Thornbloom is licensed under a Creative Commons Attributi
 				viewToggleButton();
 				if(!options.linkCalendarToEventUrl) {
 					event.preventDefault();
-				}
+				}*/
+				window.open('album.html');
+				
 			// If picker, pick date
 			} else if (options.mode === "picker") {
 				var	setMonth = $(parent).data("setMonth"),

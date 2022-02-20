@@ -87,7 +87,7 @@ Monthly 2.2.2 by Kevin Thornbloom is licensed under a Creative Commons Attributi
 			return month === 2 ? (year & 3) || (!(year % 25) && year & 15) ? 28 : 29 : 30 + (month + (month >> 3) & 1);
 		}
 
-		// Build the month
+		// Build the month(달력 수정 여기서!)
 		function setMonthly(month, year) {
 			$(parent).data("setMonth", month).data("setYear", year);
 
@@ -111,7 +111,7 @@ Monthly 2.2.2 by Kevin Thornbloom is licensed under a Creative Commons Attributi
 						month < currentMonth
 						|| (month === currentMonth && dayNumber < currentDay)
 					))),
-					innerMarkup = '<div class="monthly-day-number">' + dayNumber + '</div><div class="monthly-indicator-wrap"><p>음</p></div>';//찾았다 여기!!
+					innerMarkup = '<div class="monthly-day-number">' + dayNumber + '</div><div class="monthly-indicator-wrap"><p>대표이미지1</p></div>';//찾았다 여기!!
 				if(options.mode === "event") {
 					var thisDate = new Date(year, mZeroed, dayNumber, 0, 0, 0, 0);
 					$(parent + " .monthly-day-wrap").append("<div"
@@ -120,7 +120,7 @@ Monthly 2.2.2 by Kevin Thornbloom is licensed under a Creative Commons Attributi
 							+ " dt" + thisDate.toISOString().slice(0, 10)
 							)
 						+ attr("data-number", dayNumber)
-						+ ">" + innerMarkup + "<p>냐</p></div>");
+						+ ">" + innerMarkup + "<p>대표이미지2</p></div>");
 					$(parent + " .monthly-event-list").append("<div"
 						+ attr("class", "monthly-list-item")
 						+ attr("id", uniqueId + "day" + dayNumber)

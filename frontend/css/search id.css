@@ -1,5 +1,10 @@
+*{
+    font-family: 'Jua', sans-serif;
+  }
+
 body {
     background-color: white;
+    z-index: 1;
 }
 
 .main{
@@ -48,11 +53,39 @@ p{
 
 button{
     background-color: white;
+    border-radius: 0.5em;
     border :2px solid rgba(128, 128, 128, 0.5);
     width : 60px;
     height: 30px;;
 }
 
+input{
+    border-radius: 0.5em;
+    box-shadow: none;
+}
+
+.modal{
+    position : absolute;
+    width: 100%; height: 100%;
+    top : 0; left : 0;
+    display : none;
+    z-index: 2;
+}
+
+.modal_content{
+    width:400px; 
+  height:200px;
+  background:#fff; 
+  border-radius:10px;
+  border : solid rgba(31, 147, 124, 0.5);
+  position:relative; 
+  top:20%; left:50%;
+  margin-top:-100px; margin-left:-200px;
+  color : black;
+  box-sizing:border-box; padding:74px 0;
+  line-height:5px; cursor:pointer;
+  text-align :center;
+  }
 
 /*main{
     background-color: rgba(128, 128, 128, 0.5);

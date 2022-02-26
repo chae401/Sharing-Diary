@@ -91,6 +91,11 @@ input{
     color: red;
 }
 
+.select{
+    border-radius : 0.5em;
+    height: 25px;
+}
+
 /*main{
     background-color: rgba(128, 128, 128, 0.5);
     height : 1.5px;

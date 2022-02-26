@@ -17,6 +17,28 @@ app.get('/login', function(req, res){
     res.sendFile(_path + '/frontend/login.html');
 });
 
+app.post('/login', function(req, res){
+    var username = req.body.username;
+    var password = req.body.passward;
+    
+    if (username && password) {
+        connection.query('SELECT * FROM user WHERE username = ? AND password = ?', [username, password], function(error, results, fields) {
+            if (error) throw error;
+            if (results.length > 0) {
+                request.session.loggedin = true;
+                request.session.username = username;
+                response.redirect('/diary');
+                response.end();
+            } else {              
+                response.send('<script type="text/javascript">alert("로그인 정보가 일치하지 않습니다."); document.location.href="/login";</script>');    
+            }            
+        });
+    } else {        
+        response.send('<script type="text/javascript">alert("username과 password를 입력하세요!"); document.location.href="/login";</script>');    
+        response.end();
+    }
+});
+
 app.get('/search_id', function(req, res){
     res.sendFile(_path + '/frontend/search id.html');
 });

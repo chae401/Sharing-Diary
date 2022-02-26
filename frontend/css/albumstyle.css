@@ -1,107 +1,157 @@
 
 .main{
-    box-shadow: 0 13px 15px rgba(0, 0, 0, 0.5);
-    width:800px;
-      height:600px;
-      position:absolute;
-      left:50%;
-      top:50%;
-      margin-left:-400px;
-      margin-top:-300px;
-      background-color: #ffffff;
-      border: 5px solid rgb(78, 134, 130);
-      border-radius: 30px;
-  }
-  
-  #title{
-      width:800px;
-      height:96px;
-      position:absolute;
-      left:50%;
-      top:18%;
-      margin-left:-403px;
-      margin-top:-109.5px;
-      border: 2px solid rgb(78, 134, 130);
-      border-radius: 30px 30px 0px 0px;
-      background: rgb(78, 134, 130);
-      font-size:25px;
-      color: white;
-  }
-  
-  #val{
-    width:600px;
-      height:96px;
-      position:absolute;
-      left:50%;
-      top:50%;
-      margin-left:-360px;
-      margin-top:-25px;
-     font-size:35px;
-      color: white;
-  }
-  
-  #fri{
-   width:800px;
-      height:96px;
-      position:absolute;
-      left:50%;
-      top:50%;
-      margin-left:-390px;
-      margin-top:-200px;
-      font-size:22px;
-  }
-  
-  #album{
-    width:700px;
+  box-shadow: 0 13px 15px rgba(0, 0, 0, 0.5);
+  width:800px;
     height:600px;
-    margin:0 auto;
     position:absolute;
-      left:50%;
-      top:50%;
-      margin-left:-350px;
-      margin-top:-120px;
-    overflow:hidden;
-    padding-top:10px;
-  }
-  
-  article{
-    float: left;
-    margin-left: 18px;
-    margin-bottom: 13px;
-  }
-  
-  .pic{
-    display:block;
-    width: 200px;
-    height: 150px;
-  }
+    left:50%;
+    top:50%;
+    margin-left:-400px;
+    margin-top:-300px;
+    background-color: #ffffff;
+    border: 5px solid rgb(78, 134, 130);
+    border-radius: 30px;
+}
 
-  .album_pic{
-    width: 400px;
-    height: 300px;
-  }
-  
-  #add_btn{
-      position:absolute;
-      left:50%;
-      top:50%;
-      margin-left:330px;
-      margin-top:230px;
-  }
+#title{
+    width:800px;
+    height:96px;
+    position:absolute;
+    left:50%;
+    top:18%;
+    margin-left:-403px;
+    margin-top:-109.5px;
+    border: 2px solid rgb(78, 134, 130);
+    border-radius: 30px 30px 0px 0px;
+    background: rgb(78, 134, 130);
+    font-size:25px;
+    color: white;
+}
 
- 
-  .white_content {
-    display: none;
-    padding: 15px;
-    width:650px;
-     height:350px;
-     position:absolute;
-       left:50%;
-       top:50%;
-       margin-left:0px;
-       margin-top:180px;
-    border: 10px solid #c9e7e5;
-    background-color: white;
-    z-index: 1002;
-    overflow: auto;
-  }
+#val{
+    width:600px;
+    height:96px;
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin-left:-360px;
+    margin-top:-25px;
+    font-size:35px;
+    color: white;
+}
+
+#fri{
+    width:800px;
+    height:96px;
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin-left:-390px;
+    margin-top:-200px;
+    font-size:22px;
+}
+
+#album{
+  width:700px;
+  height:600px;
+  margin:0 auto;
+  position:absolute;
+    left:50%;
+    top:50%;
+    margin-left:-350px;
+    margin-top:-120px;
+  overflow:hidden;
+  padding-top:10px;
+}
+
+article{
+  float: left;
+  margin-left: 18px;
+  margin-bottom: 13px;
+}
+
+.pic{
+  display:block;
+  width: 200px;
+  height: 150px;
+}
+
+.album_pic{
+  width: 400px;
+  height: 300px;
+}
+
+#add_btn{
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin-left:330px;
+    margin-top:230px;
+}
+
+
+.white_content {
+  display: none;
+  padding: 15px;
+  width:650px;
+   height:350px;
+   position:absolute;
+     left:50%;
+     top:50%;
+     margin-left:0px;
+     margin-top:180px;
+  border: 10px solid #c9e7e5;
+  background-color: white;
+  z-index: 1002;
+  overflow: auto;
+}
+
+.dropbtn {
+color: white;
+font-size: 16px;
+border: none;
+cursor: pointer;
+}
+
+.dropdown {
+position: relative;
+z-index : 2;
+display: inline-block;
+}
+
+.dropdown-content {
+  display:table-cell; 
+  vertical-align:middle;
+  line-height:40px;
+  border: 3px solid #c9e7e5;
+ width:110px;
+ height:40px;
+ position:absolute;
+ left:50%;
+ top:50%;
+ margin-left:200px;
+ margin-top:-150px;
+display: none;
+position: absolute;
+background-color: white;
+border-radius: 10%;
+/*min-width: 130px;*/
+overflow: hiden;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+font-size: 17px;
+padding: 4px 0px 4px 8px;
+}
+/*
+.dropdown-content {
+color: black;
+padding: 8px 8px;
+text-decoration: none;
+display: block;
+}*/
+
+.dropdown :hover {
+background-color: #ddd;
+}
+
+.show {display: block;} 

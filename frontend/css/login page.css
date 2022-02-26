@@ -1,0 +1,147 @@
+body{
+    background-color: white;
+} 
+
+select{
+    width:85px;
+    height:25px;
+    outline: none;
+    background: white;
+    border: 1px solid lightslategray;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+  }
+
+.main{
+    text-align: center;
+	margin-top: 20px;
+}
+
+/*로고*/
+.Logoimage{
+    height: 32px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+/*input 아이디박스*/
+.login-id-form{
+
+  border-bottom: 2px solid #adadad;
+  margin: 30px;
+  padding: 10px 10px;
+}
+/*input 아이디 form*/
+.id{
+  width: 100%;
+  border:none;
+  outline:none;
+  color: #636e72;
+  font-size:16px;
+  height:25px;
+  background: none;
+}
+/*input 패스워드박스*/
+.login-pw-form{
+
+  border-bottom: 2px solid #adadad;
+  margin: 30px;
+  padding: 10px 10px;
+}
+/*input 패스워드 form*/
+.pw{
+  width: 100%;
+  border:none;
+  outline:none;
+  color: #636e72;
+  font-size:16px;
+  height:25px;
+  background: none;
+}
+/*로그인버튼박스*/
+.login-btn-form{
+    height: 50px;
+    line-height: 55px;
+    margin: 0px 10px 8px 10px;
+    border: solid 1px black;
+    background-color: rgb(31, 147, 124);
+    color: white;
+    cursor: pointer;
+}
+/*로그인버튼*/
+.btn{
+    width:100px;
+    background-color: rgb(31, 147, 124);
+    border: none;
+    color:white;
+    font-size: 18px;
+    outline:none;
+    cursor: pointer;
+}
+/*간편 로그인 프레임*/
+#easy-login-form{
+    height: 90px;
+    margin: 0px 10px 35px 10px;
+}
+/*간편 로그인*/
+.easy-login{
+    font-size: 20px;
+    font-weight: 500;
+}
+/*구글 로그인 박스*/
+.easy-login-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+/*구글 로그인*/
+.google-login{
+
+    border: 1px solid rgb(31, 147, 124);
+    background-color: white;
+    margin: 0px 0px 0px 4px;
+    line-height: 55px;
+    width : 200%;
+}
+
+/*찾기/회원가입*/
+.find-signup-form{
+    height: 100px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+/*찾기/ 회원가입 글자 희미하게*/
+.find-signup-form a{
+    color: rgb(150, 150, 150);
+    text-decoration: underline;
+    font-weight: 500;
+}
+.find-signup-form span{
+    color: rgb(150, 150, 150);
+    font-weight: 500;
+}
+/*아이디 찾기*/
+.find-id{
+    margin: 3px;
+    font-size: 14px;
+    border-right: 1px solid gainsboro;
+}
+/*비밀번호 찾기*/
+.find-pw{
+    margin: 3px;
+    font-size: 14px;
+    border-right: 1px solid gainsboro;
+}
+/*회원가입*/
+.sign-up{
+    margin: 3px;
+    font-size: 14px;
+}
+/*가로 800px 이상일때*/
+@media(min-width : 800px)
+{
+    .main{
+        width: 460px;
+        margin: auto;
+    }
+}
